@@ -1,0 +1,162 @@
+/* Body */
+body {
+	background-color: hsl(0, 100%, 74%);
+	background-image: url('../images/bg-intro-desktop.png');
+	font-family: 'Poppins', sans-serif;
+}
+
+
+main {
+	display: block;
+	display: inline-flex;
+	/* Use to place two divs next to each other. It also made the structure of the form fixed, not exceeding the defined limit. */
+	margin: 6% 15% 6% 13%;
+	/* Top-right-bottom-left */
+}
+
+.text {
+	padding: 10% 5% 0 3%;
+	/* Top-right-bottom-left */
+	color: hsl(0, 0%, 100%);
+}
+
+h1 {
+	font-family: Arial;
+	font-weight: 700;
+	font-size: 50px;
+}
+
+.text-p {
+	font-weight: 400;
+	font-size: 17px;
+}
+
+.formulary-box {
+	width: 84%;
+}
+
+/* Price Button */
+.price-div {
+	box-shadow: 0px 5px hsla(0, 78%, 55%, 0.4);
+	background-color: hsl(248, 32%, 49%);
+	border: 1px solid hsl(248, 32%, 49%);
+	border-radius: 7px;
+	text-align: center;
+	padding: 12px;
+	cursor: pointer;
+}
+
+.price {
+	display: inline-block;
+	color: hsl(0, 0%, 100%);
+	font-size: 17px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.price:hover {
+	background-color: hsl(248, 32%, 49%);
+}
+
+.price:active {
+	position: relative;
+	top: 1px;
+}
+
+a span {
+	font-weight: 400;
+}
+
+/* Registration Form */
+.registration-form {
+	background-color: hsl(0, 0%, 100%);
+	padding: 30px 30px 30px 30px;
+	/* Top-right-bottom-left */
+	box-shadow: 0px 5px hsla(0, 78%, 55%, 0.4);
+	border-radius: 7px;
+}
+
+.first-name,
+.last-name,
+.email,
+.password {
+	display: inline-block;
+	border: 1px solid hsl(246, 25%, 77%);
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-weight: 600;
+	height: 40px;
+	width: 400px;
+	padding-left: 15px;
+}
+
+/* Claim Your Trial Button */
+.cyt-btn {
+	box-shadow: 0px 4px hsl(154, 62%, 44%);
+	background-color: hsl(154, 59%, 51%);
+	border-radius: 7px;
+	border: 1px solid hsl(154, 59%, 51%);
+	display: inline-block;
+	cursor: pointer;
+	color: hsl(0, 0%, 100%);
+	font-size: 15px;
+	font-weight: bold;
+	/* padding: 12px 129px 12px 107px; */
+	/* Top-right-bottom-left */
+	text-decoration: none;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 400px;
+	text-align: center;
+}
+
+.cyt-btn:hover {
+	background-color: hsl(154, 59%, 51%);
+}
+
+.cyt-btn:active {
+	position: relative;
+	top: 1px;
+}
+
+/* Term & Services */
+.terms-services {
+	font-weight: 600;
+	color: hsl(246, 25%, 77%);
+	font-size: 10px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.terms-services-link {
+	color: hsl(0, 100%, 74%);
+	text-decoration: none;
+}
+
+
+@media (max-width: 674px) {
+	main {
+		display: inline-block;
+		flex-direction: column;
+	}
+
+	h1 {
+		font-size: 35px;
+		text-align: center;
+	}
+
+	.text-p {
+		text-align: center;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.price {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	.formulary-box {
+		width: 100%;
+	}
+}
